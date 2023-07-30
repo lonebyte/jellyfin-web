@@ -136,7 +136,7 @@
   "scripts": {
     "start": "npm run serve",
     "serve": "webpack serve --config webpack.dev.js",
-    "build:development": "cross-env NODE_OPTIONS=\"--max_old_space_size=6144\" webpack --config webpack.dev.js",
+    "build:development": "cross-env NODE_OPTIONS=\"--max_old_space_size=2048\" webpack --config webpack.dev.js",
     "build:production": "cross-env NODE_ENV=\"production\" NODE_OPTIONS=\"--max_old_space_size=2048\" webpack --config webpack.prod.js",
     "build:check": "tsc --noEmit",
     "escheck": "es-check",
