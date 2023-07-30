@@ -5,6 +5,7 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = merge(common, {
     mode: 'production',
+    parallelism: 10,
     entry: { 'main.jellyfin': './index.jsx' },
     plugins: [
         new WorkboxPlugin.InjectManifest({
